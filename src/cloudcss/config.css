@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+:root{
+    --body-clr:#F8F8F8;
+    --dark-clr:#707070;
+    --light-clr:#ffffff;
+    --prm-grd:linear-gradient(-210deg, #E1DFDF 50%, #FFFFFF 80%);
+    --prm-grd-reverse:linear-gradient(-210deg, #FFFFFF 50%, #E1DFDF  80%);
+}
+body{
+  background-color:var(--body-clr);
+}
+button{
+    border:0;
+}
+.g{
+    display:grid;
+}
+.g.c{
+    place-content:center;
+}
+.b{
+    border:1px solid;
+}
+.f{
+    display:flex;
+}
+.f.f-cl{
+    flex-direction:column;
+}
+.jc-sb{
+    justify-content:space-between;
+}
+.jc-sa{
+    justify-content:space-around;
+}
+.ai-sb{
+    align-items:space-between;
+}
+.ai-c{
+    align-items:center;
+}
+.prm{
+    background:var(--prm-grd);
+    padding:.3rem;
+    border-radius:1.5rem;
+}
+.prm.crcl{
+    border-radius:50%;
+    min-width:50px;
+    height:50px;    
+}
+.prm.crcl:active{
+    background:var(--prm-grd-reverse);
+}

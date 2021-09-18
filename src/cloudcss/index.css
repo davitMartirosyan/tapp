@@ -1,0 +1,27 @@
+@import "config.css";
+.tap{
+  padding: 0 .8rem;
+}
+header{
+  padding:.8rem 0;
+  position:relative;
+}
+header:after{
+  content:"";
+  margin-top:.8rem;
+  display:block;
+  border-top:1px solid rgba(5,5,5, .2);
+  border-bottom:1px solid var(--light-clr);
+  width:100%;
+  position:absolute;
+  bottom:0;
+}
+.logo{
+  border:1px solid red;
+}
+.logo h5{
+  margin-left:.4rem;
+  font-size:1.3rem;
+  color:rgb(61, 61, 61);
+  font-family: 'ABeeZee', sans-serif;
+}
