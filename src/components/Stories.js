@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../cloudcss/stories.css";
 import Story from "./Story";
 
 function Stories(props){

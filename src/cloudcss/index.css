@@ -16,9 +16,9 @@ header{
   position:absolute;
 }
 .logo h5{
-  margin-left:.4rem;
+  margin-left:.5rem;
   font-size:1.3rem;
+  margin-top:.5rem;
   color:rgb(61, 61, 61);
   font-family: 'ABeeZee', sans-serif;
 }
-@import "stories.css";
