@@ -1,19 +1,11 @@
 @import "config.css";
 .tap{
   padding: 0 .8rem;
+  height:100vh;
 }
 header{
   padding:.8rem 0;
   margin-bottom:.8rem;
-}
-.splitter{
-  content:"";
-  bottom:-.5rem;
-  display:block;
-  border-top:1px solid rgba(114, 114, 114, .2);
-  border-bottom:1px solid var(--light-clr);
-  width:100%;
-  position:absolute;
 }
 .logo h5{
   margin-left:.5rem;

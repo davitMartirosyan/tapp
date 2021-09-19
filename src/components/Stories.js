@@ -27,13 +27,19 @@ function Stories(props){
         id:4,
         fname:"Yen",
         pic:"4.png",
-        seen:true
+        seen:false
+    },
+    {
+        id:5,
+        fname:"Adam",
+        pic:"5.png",
+        seen:false
     }
 ])
     return (
         <div className="stories r">
         <div className="friend_stories ">
-            <div className="storiesScrollBar f wp">
+            <div className="storiesScrollBar f">
                     <div className="story f f-cl ai-c" data-target="me">
                         <button className="prm crcl"><i class="fas fa-plus"></i></button>
                         <p>Davit</p>

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Stories from "./components/Stories";
 import Tags from "./components/Tags";
+import ChatMessages from "./components/ChatMessages";
 function App() {
   const paths = {
     imgs:"./path/icons/",
@@ -12,6 +13,7 @@ function App() {
         <Header paths={paths}/>
         <Stories paths={paths}/>
         <Tags/>
+        <ChatMessages paths={paths}/>
     </div>
   );
 }

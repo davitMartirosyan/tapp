@@ -8,7 +8,7 @@ function Header(props){
                 <h5>DEM</h5>
             </div>
             <button className="prm crcl search"> <i class="fas fa-search"></i></button>
-            <div className="splitter"></div>
+            <div className="splitter btm"></div>
         </header>
     )
 }
