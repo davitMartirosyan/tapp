@@ -1,21 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 :root{
-    --body-clr:#F8F8F8;
+    --body-clr:#ffffff;
     --dark-clr:#707070;
     --light-clr:#ffffff;
-    --prm-grd:linear-gradient(-210deg, #E1DFDF 50%, #FFFFFF 80%);
+    --prm-grd:linear-gradient(-210deg, #f1f1f1 50%, #FFFFFF 80%);
     --prm-grd-reverse:linear-gradient(-210deg, #FFFFFF 50%, #E1DFDF  80%);
+    --secondary-clr:#3C3C59;
+    --story-border:linear-gradient(-210deg, #379BDE 50%, #115ED2 80%);
 }
 body{
   background-color:var(--body-clr);
 }
 button{
     border:0;
+    outline:none;
+    font-size:.8rem;
+    color:var(--secondary-clr);
+}
+p{
+    font-family:"noto-sans";
+}
+a{
+    text-decoration: none;
+    color:var(--secondary-clr);
+}
+a:active{
+    color:rgb(131, 0, 0);
+}
+ul{
+    list-style:none;
 }
 .g{
     display:grid;
@@ -29,6 +49,9 @@ button{
 .f{
     display:flex;
 }
+.f.wp{
+    flex-wrap: wrap;
+}
 .f.f-cl{
     flex-direction:column;
 }
@@ -38,6 +61,9 @@ button{
 .jc-sa{
     justify-content:space-around;
 }
+.jc-c{
+    justify-content:center;
+}
 .ai-sb{
     align-items:space-between;
 }
@@ -45,15 +71,24 @@ button{
     align-items:center;
 }
 .prm{
-    background:var(--prm-grd);
-    padding:.3rem;
-    border-radius:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: linear-gradient(170deg, #e7e7e7, #FFFFFF);
+    box-shadow: 2px 2px 5px #DDDFE3, -2px -2px 5px #FFFFFF;
+    padding:.5rem;
+    border-radius: 1.5rem;
 }
 .prm.crcl{
     border-radius:50%;
     min-width:50px;
-    height:50px;    
+    height:50px;
 }
-.prm.crcl:active{
-    background:var(--prm-grd-reverse);
+.prm:active{
+    background: linear-gradient(315deg, #e4e4e4, #ffffff);
+    box-shadow:  -2px -2px 5px #dedede,
+             2px 2px 5px #e2e2e2;
+}
+.r{
+    position:relative;
 }

@@ -1,0 +1,9 @@
+.tags{
+    overflow-x:auto;
+    padding:.5rem 0;
+    padding-left:.5rem;
+    padding-right:.5rem;
+}
+.tag + .tag{
+    margin-left:.5rem;
+}

@@ -4,20 +4,16 @@
 }
 header{
   padding:.8rem 0;
-  position:relative;
+  margin-bottom:.8rem;
 }
-header:after{
+.splitter{
   content:"";
-  margin-top:.8rem;
+  bottom:-.5rem;
   display:block;
-  border-top:1px solid rgba(5,5,5, .2);
+  border-top:1px solid rgba(114, 114, 114, .2);
   border-bottom:1px solid var(--light-clr);
   width:100%;
   position:absolute;
-  bottom:0;
-}
-.logo{
-  border:1px solid red;
 }
 .logo h5{
   margin-left:.4rem;
@@ -25,3 +21,4 @@ header:after{
   color:rgb(61, 61, 61);
   font-family: 'ABeeZee', sans-serif;
 }
+@import "stories.css";
