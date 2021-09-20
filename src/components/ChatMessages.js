@@ -76,7 +76,7 @@ function ChatMessages(props){
              friendsChat.map(frChat => {
                 return (
                     <div className="fchat prm g g-col-3" data-target="id" key="id">
-                       <div className="fpic">
+                       <div className="fpic primary crcl">
                            <img src={path.upic+frChat.pic} />
                         </div>
                             <div className="fstaff f f-cl jc-sb">

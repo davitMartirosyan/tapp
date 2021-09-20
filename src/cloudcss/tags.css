@@ -2,6 +2,9 @@
     overflow-x:auto;
     padding:.5rem 0;
 }
+.tag{
+    display:block;
+}
 .tag + .tag{
     margin-left:.5rem;
 }

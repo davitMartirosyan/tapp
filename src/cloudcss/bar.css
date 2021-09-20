@@ -1,10 +1,20 @@
 .bar{
     margin:0 .8rem;
-    padding:.5rem .8rem 0 .8rem;
+    padding:.5rem 0rem 0 0rem;
     background-color:var(--body-clr);
     height:3.5rem;
     position:fixed;
     bottom:0;
     left:0;
     right:0;
+}
+
+.navitemico{
+    width:25px;
+    height:25px;
+}
+.navitemico img{
+    width:17px;
+    height:17px;
+    filter:var(--icons-clr);
 }

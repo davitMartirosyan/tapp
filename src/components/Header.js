@@ -7,6 +7,7 @@ function Header(props){
                 <img style={{ width:"40px", height:"40px"}}src={path.imgs+"icon-72x72.png"} alt="logo"/>
                 <h5>DEM</h5>
             </div>
+            <input type="checkbox" onChange={props.themeChange}/>
             <button className="prm crcl search"> <i class="fas fa-search"></i></button>
         </header>
     )

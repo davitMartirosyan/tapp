@@ -1,23 +1,25 @@
 .friendsChats{
     overflow-y:auto;
-    height:62%;
+    height:60%;
 }
 .chat{
+    padding:1rem 0;
 }
 .fchat{
-    border:2px solid #fff;
+    border:2px solid var(--border);
 }
 .fchat:last-child{
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 .fchat + .fchat{
-    margin-top:.9rem;
+    margin-top:.8rem;
 }
 .fpic{
     border-radius:50%;
     overflow:hidden;
     width:50px;
     height:50px;
+    border:2px solid var(--border);
 }
 .fpic img{
     width:100%;

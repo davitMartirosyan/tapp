@@ -3,17 +3,14 @@
   padding: 0 .8rem;
   height:100vh;
 }
-.realcontent{
-  border:1px solid;
-}
+
 header{
   padding:.8rem 0;
-  margin-bottom:.8rem;
 }
 .logo h5{
   margin-left:.5rem;
   font-size:1.3rem;
   margin-top:.5rem;
-  color:rgb(61, 61, 61);
+  color:var(--secondary-clr);
   font-family: 'ABeeZee', sans-serif;
 }

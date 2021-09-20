@@ -9,9 +9,14 @@ function App() {
     imgs:"./path/icons/",
     upic:"./path/upic/"
   }
+  // const[mode, setMode] = useState("light");
+
+  function themeChange(e){
+    this.checked === true ? alert("ok") : alert("disabled");
+  }
   return (
     <div className="tap r">
-        <Header paths={paths}/>
+        <Header paths={paths} themeChange={themeChange}/>
         <Stories paths={paths}/>
         <Tags/>
         <ChatMessages paths={paths}/>

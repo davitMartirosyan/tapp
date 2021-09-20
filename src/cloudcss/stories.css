@@ -1,7 +1,6 @@
 .friend_stories{
     overflow-x:auto;
     padding: .8rem .5rem;
-    margin-bottom:.8rem;
 }
 .storiesScrollBar{
     
@@ -16,7 +15,7 @@
     color:var(--dark-clr);
 }
 .friend-story .friend-image{
-    border-radius:50%;
+    border-radius:100%;
     overflow:hidden;
     width:50px;
     height:50px;
@@ -24,7 +23,9 @@
     padding:.2rem;
 }
 .friend-story .friend-image img{
+    border-radius:50%;
    width:100%;
    height:100%;
-   border-radius:50%;
+   object-fit:cover;
+   object-position: center;
 }
