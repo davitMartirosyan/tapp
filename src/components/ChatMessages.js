@@ -66,95 +66,11 @@ function ChatMessages(props){
             time:"Tuesday",
             messageCount:"1",
             new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-
+        }
     ])
 
     return(
     <div className="friendsChats r">
-        <div className="splitter btm"></div>
         <div className="chat">
          {
              friendsChat.map(frChat => {

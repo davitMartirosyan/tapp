@@ -1,12 +1,14 @@
 .friendsChats{
+    overflow-y:auto;
+    height:62%;
 }
 .chat{
-    margin-top:.5rem;
-    overflow-y:auto;
-    max-height:30vh;
 }
 .fchat{
     border:2px solid #fff;
+}
+.fchat:last-child{
+    margin-bottom:2rem;
 }
 .fchat + .fchat{
     margin-top:.9rem;

@@ -53,6 +53,8 @@ ul{
     border-bottom:1px solid var(--light-clr);
     width:100%;
     position:absolute;
+    left:0;
+    top:0;
 }
 .splitter.btm{
     bottom:-.3rem;

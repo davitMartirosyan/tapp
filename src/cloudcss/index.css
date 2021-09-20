@@ -3,6 +3,9 @@
   padding: 0 .8rem;
   height:100vh;
 }
+.realcontent{
+  border:1px solid;
+}
 header{
   padding:.8rem 0;
   margin-bottom:.8rem;
