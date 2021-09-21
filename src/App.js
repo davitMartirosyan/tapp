@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Stories from "./components/Stories";
 import Tags from "./components/Tags";
@@ -9,13 +9,13 @@ function App() {
     imgs:"./path/icons/",
     upic:"./path/upic/"
   }
-  // const[mode, setMode] = useState("light");
+  const[mode, setMode] = useState("light");
 
   function themeChange(e){
-    this.checked === true ? alert("ok") : alert("disabled");
+    e.target.checked ? setMode("dark") : setMode("light")
   }
   return (
-    <div className="tap r">
+    <div className={"tap r "+mode}>
         <Header paths={paths} themeChange={themeChange}/>
         <Stories paths={paths}/>
         <Tags/>

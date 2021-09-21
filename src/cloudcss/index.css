@@ -7,6 +7,54 @@
 header{
   padding:.8rem 0;
 }
+.togg-flat-checkbox{
+	position: relative;
+	display: inline-block;
+	width:55px;
+	height: 30px;
+}
+.togg-flat-checkbox input{
+	display: none;
+}
+.togg-flat-checkbox .togg-flat-checkbox-slider{
+	position: absolute;
+	cursor: pointer;
+	top:0; left: 0; right: 0; bottom: 0;
+	background:#efefef;
+	transition: .3s;
+	border:3px solid var(--border);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.togg-flat-checkbox .togg-flat-checkbox-slider:before{
+	position: absolute;
+	content:"";
+	top:3px;
+	left:-2px;
+	background-color:#efefef;
+	transition: .3s;
+}
+.togg-flat-checkbox .togg-flat-checkbox-slider.round:before{
+	width:43%;
+	height: 43%;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	transform: rotateZ(-45deg);
+	background:white;
+	box-shadow:inset 0px 0px 0px;
+}
+.togg-flat-checkbox input[type="checkbox"]:checked + .togg-flat-checkbox-slider.round:before{
+	background:yellow;
+	transform: translateX(32px) rotateZ(45deg);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	box-shadow:inset 0.3px 0.4px 1px 0.3px rgba(0,0,0,0.3);
+}
+.togg-flat-checkbox input[type="checkbox"]:checked + .togg-flat-checkbox-slider{
+	background:black;
+}
+.togg-flat-checkbox .togg-flat-checkbox-slider.round{
+	border-radius: 35px;
+}
 .logo h5{
   margin-left:.5rem;
   font-size:1.3rem;
