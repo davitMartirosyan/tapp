@@ -23,6 +23,7 @@ transition:color .1s;
     --border:rgb(255, 255, 255);
     --icons-clr:invert(0);
     --splitter-clr:rgba(114, 114, 114, .2);
+    --message-count:#fff;
 }
 .tap{
     background-color:var(--body-clr);
@@ -39,6 +40,7 @@ transition:color .1s;
     --secondary-clr:rgb(255, 255, 255);
     --icons-clr:invert(100%);
     --splitter-clr:rgba(0, 0, 0, 0.2);
+    --message-count:#fff;
 }
 
 button{
@@ -80,17 +82,17 @@ ul{
 .splitter.btm{
     bottom:-.3rem;
 }
-.gr{
-    color:var(--green-text);
+p.gr{
+    color:var(--green-text) !important;
 }
-.gr-count{
+p.gr-count{
     width:25px;
     height:25px;
     font-size:.7rem;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
+    color:var(--message-count) !important;
     background:var(--green);
     border-radius:50%;
 }

@@ -6,7 +6,9 @@ function ChatMessages(props){
     const path = props.paths;
     const [friendsChat, setFriendChat] = useState([
         {
-            id:1,
+            frid:614,
+            uid:5,
+            chid:15245123844645312,
             pic:"5.png",
             fname:"Adam",
             message:"Բարև ձեզ",
@@ -15,7 +17,9 @@ function ChatMessages(props){
             new:true
         },
         {
-            id:2,
+            frid:875,
+            uid:5,
+            chid:464654641545464,
             pic:"6.png",
             fname:"Elen",
             message:"Ում հետ ես խոսում",
@@ -24,7 +28,9 @@ function ChatMessages(props){
             new:true
         },
         {
-            id:3,
+            frid:974,
+            uid:5,
+            chid:44564112154454545,
             pic:"7.png",
             fname:"Meggi",
             message:"Hi",
@@ -40,16 +46,16 @@ function ChatMessages(props){
          {
              friendsChat.map(frChat => {
                 return (
-                    <Link to={"/chat?"+frChat.id}>
+                    <Link to={"/chat?"+frChat.chid}>
                     <div className="fchat prm g g-col-3" data-target="id" key="id">
                        <div className="fpic primary crcl">
                            <img src={path.upic+frChat.pic}  alt={frChat.fname}/>
                         </div>
-                            <div className="fstaff f f-cl jc-sb">
+                       <div className="fstaff f f-cl jc-sb">
                                 <h4>{frChat.fname}</h4>
                                 <p>{frChat.message}</p>
                             </div>
-                            <div className="fchatinfo f f-cl jc-sb ai-c">
+                       <div className="fchatinfo f f-cl jc-sb ai-c">
                                 <p className={frChat.new === true ? "gr" : ""}>{frChat.time}</p>
                                 {
                                     frChat.new === true ? <p className="gr-count">{frChat.messageCount}</p> : ""
