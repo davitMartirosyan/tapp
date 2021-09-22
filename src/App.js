@@ -17,15 +17,15 @@ function App() {
   }
   return (
     <div className={"tap r "+mode}>
+      <Router>
         <Header paths={paths} themeChange={themeChange}/>
         
-      <Router>
           <Stories paths={paths}/>
           <Tags/>
           <ChatMessages paths={paths}/>
-      </Router>
 
         <Bar/>
+      </Router>
     </div>
   );
 }

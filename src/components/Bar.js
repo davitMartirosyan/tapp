@@ -19,12 +19,12 @@ const Bar = () => {
                 </li>
 
                 <li className="navitem f f-cl ai-c">
-                    <a href="#" className="f f-cl ai-c">
+                    <Link to="/calls" className="f f-cl ai-c jc-c">
                         <span className="navitemico f jc-c ai-c">
                         <Iconic iconame="call"/>
                         </span>
                         <span className="navitemtext"><p>calls</p></span>
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="navitem f f-cl ai-c">
