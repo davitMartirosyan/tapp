@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../cloudcss/stories.css";
+import Iconic from './icopack/Iconic';
 import Story from "./Story";
 
 function Stories(props){
@@ -41,7 +42,9 @@ function Stories(props){
         <div className="friend_stories ">
             <div className="storiesScrollBar f">
                     <div className="story f f-cl ai-c" data-target="me">
-                        <button className="prm crcl"><i class="fas fa-plus"></i></button>
+                        <button className="prm crcl">
+                            <Iconic iconame="add"/>
+                        </button>
                         <p>Davit</p>
                     </div>
                    {

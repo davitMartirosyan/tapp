@@ -1,4 +1,5 @@
 import React from "react";
+import Iconic from "./icopack/Iconic";
 function Header(props){
     const path = props.paths;
     return (
@@ -12,7 +13,9 @@ function Header(props){
 					<span class="togg-flat-checkbox-slider round"></span>
 				</label>
             
-            <button className="prm crcl search"> <i class="fas fa-search"></i></button>
+            <button className="prm crcl search"> 
+                <Iconic iconame="search"/>
+            </button>
         </header>
     )
 }

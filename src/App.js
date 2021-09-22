@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Stories from "./components/Stories";
 import Tags from "./components/Tags";
@@ -17,12 +18,17 @@ function App() {
   return (
     <div className={"tap r "+mode}>
         <Header paths={paths} themeChange={themeChange}/>
-        <Stories paths={paths}/>
-        <Tags/>
-        <ChatMessages paths={paths}/>
+        
+      <Router>
+          <Stories paths={paths}/>
+          <Tags/>
+          <ChatMessages paths={paths}/>
+      </Router>
+
         <Bar/>
     </div>
   );
 }
 
 export default App;
+///route

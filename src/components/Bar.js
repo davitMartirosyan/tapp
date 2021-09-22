@@ -1,24 +1,27 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../cloudcss/bar.css";
+import Iconic from './icopack/Iconic';
 const Bar = () => {
+
     return (
         <div className="bar r">
             <div className="splitter"></div>
 
             <ul className="navigation f jc-sb">
                 <li className="navitem f f-cl ai-c">
-                    <a href="#" className="f f-cl ai-c">
-                        <span className="navitemico f jc-c ai-c">
-                            <img className="" src="../path/icons/pictures.svg"/>
+                    <Link to="/photo" className="f f-cl ai-c jc-c">
+                        <span className="navitemico f jc-c ai-c">                      
+                        <Iconic iconame="photo"/>
                         </span>
                         <span className="navitemtext"><p>photo</p></span>
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="navitem f f-cl ai-c">
                     <a href="#" className="f f-cl ai-c">
                         <span className="navitemico f jc-c ai-c">
-                            <img className="" src="../path/icons/call.svg"/>
+                        <Iconic iconame="call"/>
                         </span>
                         <span className="navitemtext"><p>calls</p></span>
                     </a>
@@ -27,7 +30,7 @@ const Bar = () => {
                 <li className="navitem f f-cl ai-c">
                     <a href="#" className="f f-cl ai-c">
                         <span className="navitemico f jc-c ai-c">
-                            <img className="" src="../path/icons/chat.svg"/>
+                        <Iconic iconame="chat"/>
                         </span>
                         <span className="navitemtext"><p>chats</p></span>
                     </a>
@@ -36,7 +39,7 @@ const Bar = () => {
                 <li className="navitem f f-cl ai-c">
                     <a href="#" className="f f-cl ai-c">
                         <span className="navitemico f jc-c ai-c">
-                            <img className="" src="../path/icons/contacts.svg"/>
+                        <Iconic iconame="contact"/>
                         </span>
                         <span className="navitemtext"><p>contacts</p></span>
                     </a>
@@ -45,7 +48,7 @@ const Bar = () => {
                 <li className="navitem f f-cl ai-c">
                     <a href="#" className="f f-cl ai-c">
                         <span className="navitemico f jc-c ai-c">
-                            <img className="" src="../path/icons/menu.svg"/>
+                        <Iconic iconame="more"/>
                         </span>
                         <span className="navitemtext"><p>more</p></span>
                     </a>

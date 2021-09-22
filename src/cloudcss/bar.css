@@ -13,8 +13,3 @@
     width:25px;
     height:25px;
 }
-.navitemico img{
-    width:17px;
-    height:17px;
-    filter:var(--icons-clr);
-}
