@@ -10,7 +10,7 @@ const Bar = () => {
 
             <ul className="navigation f jc-sb">
                 <li className="navitem f f-cl ai-c">
-                    <Link to="/photo" className="f f-cl ai-c jc-c">
+                    <Link to="/media" className="f f-cl ai-c jc-c">
                         <span className="navitemico f jc-c ai-c">                      
                         <Iconic iconame="photo"/>
                         </span>
@@ -28,12 +28,12 @@ const Bar = () => {
                 </li>
 
                 <li className="navitem f f-cl ai-c">
-                    <a href="#" className="f f-cl ai-c">
+                    <Link to="/" className="f f-cl ai-c jc-c">
                         <span className="navitemico f jc-c ai-c">
                         <Iconic iconame="chat"/>
                         </span>
                         <span className="navitemtext"><p>chats</p></span>
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="navitem f f-cl ai-c">

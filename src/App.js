@@ -5,6 +5,7 @@ import Stories from "./components/Stories";
 import Tags from "./components/Tags";
 import ChatMessages from "./components/ChatMessages";
 import Bar from "./components/Bar";
+import Chat from "./Chat";
 function App() {
   const paths = {
     imgs:"./path/icons/",
@@ -18,12 +19,17 @@ function App() {
   return (
     <div className={"tap r "+mode}>
       <Router>
-        <Header paths={paths} themeChange={themeChange}/>
-        
-          <Stories paths={paths}/>
-          <Tags/>
-          <ChatMessages paths={paths}/>
-
+        <Switch>
+          <Route path="/" exact>
+            <Header paths={paths} themeChange={themeChange}/>
+            <Stories paths={paths}/>
+            <Tags/>
+            <ChatMessages paths={paths}/>
+          </Route>
+          <Route path={"/chat"}>
+            <Chat/>
+          </Route>
+        </Switch>
         <Bar/>
       </Router>
     </div>

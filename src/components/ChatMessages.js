@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "../cloudcss/chatmessages.css";
 
 function ChatMessages(props){
@@ -30,42 +31,6 @@ function ChatMessages(props){
             time:"15:40AM",
             messageCount:"5",
             new:false
-        },
-        {
-            id:4,
-            pic:"8.png",
-            fname:"Gev",
-            message:"Barev vonc es axpers",
-            time:"Yesterday",
-            messageCount:"2",
-            new:true
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
-        },
-        {
-            id:5,
-            pic:"9.png",
-            fname:"Evelina",
-            message:"Barev",
-            time:"Tuesday",
-            messageCount:"1",
-            new:false
         }
     ])
 
@@ -75,9 +40,10 @@ function ChatMessages(props){
          {
              friendsChat.map(frChat => {
                 return (
+                    <Link to={"/chat?"+frChat.id}>
                     <div className="fchat prm g g-col-3" data-target="id" key="id">
                        <div className="fpic primary crcl">
-                           <img src={path.upic+frChat.pic} />
+                           <img src={path.upic+frChat.pic}  alt={frChat.fname}/>
                         </div>
                             <div className="fstaff f f-cl jc-sb">
                                 <h4>{frChat.fname}</h4>
@@ -89,7 +55,8 @@ function ChatMessages(props){
                                     frChat.new === true ? <p className="gr-count">{frChat.messageCount}</p> : ""
                                 }
                             </div>
-                        </div>
+                    </div>
+                    </Link>
                 )
              })
          }
